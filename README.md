@@ -1,2 +1,2 @@
-# -GeojeBus_projext
+# -GeojeBus_project
 API 연습
