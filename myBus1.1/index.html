@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset=" UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>우리집 버스도착정보 시스템[옥포]</title>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <header>
+            <div id="myHomeTop">
+                <div class="myHome_Time">2023.05.25 오전12:52</div>
+                <div id="close_test" class="myHome_Center" onclick=test();>옥포버스정보시스템</div>
+                <div class="myHome_Wether">맑음</div>
+            </div>
+        </header>
+
+        <nav>
+            <div id="mybus_Arr">
+                <div class="mybus_Arrson">잠시후 도착</div>
+                <hr>
+                <!-- 테스트용 div -->
+                <div class="mybus_info">
+                    <div class="bus_1">151</div>
+                    <div class="bus_2">200</div>
+                    <div class="bus_3">11</div>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div id="myHome_arrInfo">
+                <div class="myHome_busShow">
+                    <div>노선번호</div>
+                    <div>대기시간</div>
+                    <div>현재버스위치</div>
+                    <div>행선지</div>
+                </div>
+
+                <div class="myHome_busDes">
+                    <div class="busCh">
+                        <div class="bus_img">
+                            <i class="fa-solid fa-bus fa-beat fa-xl"></i>
+                        </div>
+                        <div class="bus_number">190</div>
+                    </div>
+                    <div class="busCh_time">10분</div>
+                    <div class="busCh_Show">기린대로전주시청주명가</div>
+                    <div class="busCh_ter">비전대</div>
+                </div>
+
+                <div class="myHome_busDes">
+                    <div class="busCh">
+                        <div class="bus_img">
+                            <i class="fa-solid fa-bus fa-beat fa-xl"></i>
+                        </div>
+                        <div class="bus_number">190</div>
+                    </div>
+                    <div class="busCh_time">10분</div>
+                    <div class="busCh_Show">기린대로전주시청주명가</div>
+                    <div class="busCh_ter">비전대</div>
+                </div>
+
+                <div class="myHome_busDes_ZERO">
+                    <div class="busCh_zero">
+                        <div class="bus_img">
+                            <i class="mybus fa-solid fa-bus fa-beat fa-xl"></i>
+                        </div>
+                        <div class="bus_number_zero">190</div>
+                    </div>
+                    <div class="busCh_time_zero">10분</div>
+                    <div class="busCh_Show_zero"></div>
+                    <div class="busCh_ter_zero"></div>
+                </div>
+
+                <div class="myHome_busDes_ZERO">
+                    <div class="busCh_zero">
+                        <div class="bus_img">
+                            <i class="mybus fa-solid fa-bus fa-beat fa-xl"></i>
+                        </div>
+                        <div class="bus_number_zero">190</div>
+                    </div>
+                    <div class="busCh_time_zero">10분</div>
+                    <div class="busCh_Show_zero"></div>
+                    <div class="busCh_ter_zero"></div>
+                </div>
+
+                <div class="myHome_busDes_ZERO">
+                    <div class="busCh_zero">
+                        <div class="bus_img">
+                            <i class="mybus fa-solid fa-bus fa-beat fa-xl"></i>
+                        </div>
+                        <div class="bus_number_zero">190</div>
+                    </div>
+                    <div class="busCh_time_zero">10분</div>
+                    <div class="busCh_Show_zero"></div>
+                    <div class="busCh_ter_zero"></div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </section>
+    </div>
+
+    <div id="wrap_show">
+        <button id="showbutton">원래대로</button>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

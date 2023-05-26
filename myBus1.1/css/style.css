@@ -1,0 +1,305 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+#wrap_show {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    text-align: center;
+    display: none;
+    margin : 0 auto;
+}
+
+
+#myHomeTop {
+    width: 1880px;
+    height: 200px;
+    background-color: #000000;
+    border : 1px solid;
+    text-align: center;
+}
+
+#myHomeTop > div {
+    width: 580px;
+    height: 198px;
+    margin: 0 13px 0 13px;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 800;
+    color : #fff;
+    line-height: 200px;
+}
+
+#mybus_Arr {
+    margin-top: 12px;
+    width: 1880px;
+    height: 200px;
+    text-align: start;
+    background-color: #27282c;
+}
+
+.mybus_Arrson {
+    margin: 8px;
+    color : #fff;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.mybus_info {
+    width: auto;
+    margin: 10px;
+    height: 110px;
+    text-align: start;
+}
+
+.mybus_info > div {
+
+    margin : 6px;
+    width: 200px;
+    height: 95px;
+    background-color: #3535ac;
+    border: 1px solid;
+    font-size: 2.6rem;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    line-height: 95px;
+    color: #fff;
+}
+
+#myHome_arrInfo {
+    margin-top: 10px;
+    width: 1880px;
+    height: 800px;
+    border: 1px solid;
+}
+.myHome_busShow {
+    background-color: #5c5a5a;
+    border: 1px solid;
+    text-align: center;
+    width: 1880px;
+    height: 100px;
+}
+
+.myHome_busShow > div{
+    margin : 0 0 0 30px;
+    width: 400px;
+    height: 99px;
+    display: inline-block;
+    background-color: #5c5a5a;
+    text-align: center;
+    line-height: 95px;
+    color: #fff;
+    font-size: 2.6rem;
+    line-height: 100px;
+}
+
+.myHome_busDes { 
+    background-color: #000;
+    border: 1px solid;
+    text-align: center;
+    width: 1880px;
+    height: 163px;
+    border: solid 1px;
+    color : #fff;
+}
+
+
+.myHome_busDes > .busCh {
+    margin : 5px 0 5px 30px;
+    font-weight: 800;
+    width: 400px;
+    height: 148px;
+    display: inline-block;
+    text-align: center;
+    line-height: 95px;
+    color: #fff;
+    font-size: 2.8rem;
+    line-height: 148px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 3%;
+}
+
+.bus_img {
+    background-color: #fff;
+    width: 150px;
+    height: 148px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.fa-bus {
+    color : rgb(46, 32, 236);
+}
+
+
+.bus_number {
+    width: 230px;
+    height: 148px;
+    color: rgb(206, 206, 32);
+    font-weight: 600;
+    display: inline-block;
+}
+
+.busCh_time{
+    margin : 5px 0 5px 30px;
+    width: 380px;
+    font-weight: 700;
+    padding : 0 10px 0 10px;
+    background-color: #fff;
+    margin : 5px 0 5px 30px;
+    font-weight: 800;
+    display: inline-block;
+    text-align: end;
+    line-height: 95px;
+    color: #000;
+    font-size: 2.8rem;
+    line-height: 148px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 3%;
+}
+.busCh_Show {
+    margin : 5px 0 5px 30px;
+    font-weight: 800;
+    width: 400px;
+    height: 148px;
+    display: inline-block;
+    background-color: #25eb0b;
+    text-align: center;
+    line-height: 95px;
+    color: #080808;
+    font-size: 2.8rem;
+    line-height: 148px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 3%;
+}
+.busCh_ter {
+    margin : 5px 0 5px 30px;
+    font-weight: 800;
+    width: 400px;
+    height: 148px;
+    display: inline-block;
+    background-color: #1a03e9;
+    text-align: center;
+    line-height: 95px;
+    color: #ffffff;
+    font-size: 2.8rem;
+    line-height: 148px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 3%;
+}
+
+
+
+
+/* 버스정보가 없을때 */
+.myHome_busDes_ZERO {
+    background-color: #000;
+    border: 1px solid;
+    text-align: center;
+    width: 1880px;
+    height: 163px;
+    border: solid 1px;
+    color: #fff;
+}
+
+.myHome_busDes_ZERO > .busCh_zero { 
+    margin: 5px 0 5px 30px;
+    font-weight: 800;
+    width: 400px;
+    height: 148px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 2.8rem;
+    line-height: 148px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 3%;
+}
+
+
+.busCh_time_zero {
+    margin : 5px 0 5px 30px;
+    width: 380px;
+    font-weight: 700;
+    padding : 0 10px 0 10px;
+    background-color: #fff;
+    margin : 5px 0 5px 30px;
+    font-weight: 800;
+    display: inline-block;
+    text-align: end;
+    line-height: 95px;
+    color: #ffffff;
+    font-size: 2.8rem;
+    line-height: 148px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 3%;
+}
+
+.bus_number_zero {
+    width: 230px;
+    height: 148px;
+    color: rgb(206, 206, 32);
+    font-weight: 600;
+    display: inline-block; 
+    color : #000;
+}
+
+.mybus {
+    color : #fff;
+}
+.fa-bus_zero {
+    color : rgb(255, 255, 255);
+}
+
+.busCh_Show_zero {
+    margin : 5px 0 5px 30px;
+    font-weight: 800;
+    width: 400px;
+    height: 148px;
+    display: inline-block;
+    background-color: #25eb0b;
+    text-align: center;
+    line-height: 95px;
+    color: #080808;
+    font-size: 2.8rem;
+    line-height: 148px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 3%;
+}
+.busCh_ter_zero{
+    margin : 5px 0 5px 30px;
+    font-weight: 800;
+    width: 400px;
+    height: 148px;
+    display: inline-block;
+    background-color: #1a03e9;
+    text-align: center;
+    line-height: 95px;
+    color: #ffffff;
+    font-size: 2.8rem;
+    line-height: 148px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 3%;
+}
