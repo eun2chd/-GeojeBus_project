@@ -2,6 +2,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
 }
+.fa,.fab,.fad,.fal,.far,.fas{
+	font-weight: 900 !important;
+	}
 
 #wrap_show {
     margin: 0;
@@ -136,7 +139,10 @@ body {
 }
 
 .fa-bus {
-    color : rgb(46, 32, 236);
+    color : #2e20ec;
+}
+.fa-sharp { 
+    color : #000;
 }
 
 

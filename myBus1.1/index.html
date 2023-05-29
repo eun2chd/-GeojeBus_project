@@ -5,6 +5,7 @@
     <meta charset=" UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -13,7 +14,7 @@
     <title>우리집 버스도착정보 시스템[옥포]</title>
 </head>
 
-<body>
+<body id = "body">
 
     <div id="wrap">
         <header>
@@ -53,7 +54,8 @@
                         </div>
                         <div class="bus_number">190</div>
                     </div>
-                    <div class="busCh_time">10분</div>
+                    <div class="busCh_time"><i class="fa-solid fa-bus fa-beat fa-xl"></i>10분
+                    </div>
                     <div class="busCh_Show">기린대로전주시청주명가</div>
                     <div class="busCh_ter">비전대</div>
                 </div>
@@ -61,7 +63,7 @@
                 <div class="myHome_busDes">
                     <div class="busCh">
                         <div class="bus_img">
-                            <i class="fa-solid fa-bus fa-beat fa-xl"></i>
+                            <i class="fa-regular fa-loader fa-spin fa-xl" style="color: #051ce6;"></i>
                         </div>
                         <div class="bus_number">190</div>
                     </div>
@@ -119,8 +121,8 @@
         <button id="showbutton">원래대로</button>
     </div>
 
-
-    <script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
+   
 </body>
 
 </html>
