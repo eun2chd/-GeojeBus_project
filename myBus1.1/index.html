@@ -5,12 +5,12 @@
     <meta charset=" UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/582f2d7ab6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
+    
     <title>우리집 버스도착정보 시스템[옥포]</title>
 </head>
 
@@ -19,7 +19,7 @@
     <div id="wrap">
         <header>
             <div id="myHomeTop">
-                <div class="myHome_Time">2023.05.25 오전12:52</div>
+                <div id="myHome_Time"></div>
                 <div id="close_test" class="myHome_Center" onclick=test();>옥포버스정보시스템</div>
                 <div class="myHome_Wether">맑음</div>
             </div>
@@ -54,7 +54,11 @@
                         </div>
                         <div class="bus_number">190</div>
                     </div>
-                    <div class="busCh_time"><i class="fa-solid fa-bus fa-beat fa-xl"></i>10분
+                    <div class="busCh_time">
+                        <span class= "loading">
+                            <i class="fas fa-thin fa-spinner fa-spin fa-lg" style="color: #000000;"></i>
+                        </span>
+                        10분
                     </div>
                     <div class="busCh_Show">기린대로전주시청주명가</div>
                     <div class="busCh_ter">비전대</div>
@@ -63,11 +67,16 @@
                 <div class="myHome_busDes">
                     <div class="busCh">
                         <div class="bus_img">
-                            <i class="fa-regular fa-loader fa-spin fa-xl" style="color: #051ce6;"></i>
+                            <i class="fa-solid fa-bus fa-beat fa-xl"></i>
                         </div>
                         <div class="bus_number">190</div>
                     </div>
-                    <div class="busCh_time">10분</div>
+                    <div class="busCh_time">
+                        <span class= "loading">
+                            <i class="fas fa-thin fa-spinner fa-spin fa-lg" style="color: #000000;"></i>
+                        </span>
+                        10분
+                    </div>
                     <div class="busCh_Show">기린대로전주시청주명가</div>
                     <div class="busCh_ter">비전대</div>
                 </div>
@@ -122,6 +131,33 @@
     </div>
 
   <script src="./js/script.js"></script>
+  <script>
+    var Target = document.getElementById("myHome_Time");
+    function clock() {
+        var time = new Date();
+
+        var month = time.getMonth();
+        var date = time.getDate();
+        var day = time.getDay();
+        var week = ['일','월','화','수','목','금','토',];
+
+        var hours = time.getHours();
+        var minutes = time.getMinutes();
+        var seconds = time.getSeconds();
+     
+        var AmPm ="AM";
+        console.log(time);
+        if(hours > 12){   
+            var AmPm ="PM";
+            hours %= 12;
+        }
+        Target.innerText = `${month+1}월${date}일 ${week[day]} `+
+       `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds} ${AmPm}`;
+
+    }
+    clock();
+    setInterval(clock, 1000); // 1초마다 실행
+</script>
    
 </body>
 

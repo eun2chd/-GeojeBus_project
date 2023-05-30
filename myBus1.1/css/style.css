@@ -208,6 +208,11 @@ body {
     border-radius: 3%;
 }
 
+.loading {
+    position: relative;
+    left: -200px;
+}
+
 
 
 
