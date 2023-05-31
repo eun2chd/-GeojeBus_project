@@ -102,7 +102,7 @@ body {
     line-height: 100px;
 }
 
-.myHome_busDes { 
+#myHome_busDes { 
     background-color: #000;
     border: 1px solid;
     text-align: center;
@@ -113,7 +113,7 @@ body {
 }
 
 
-.myHome_busDes > .busCh {
+#myHome_busDes > .busCh {
     margin : 5px 0 5px 30px;
     font-weight: 800;
     width: 400px;
@@ -217,7 +217,7 @@ body {
 
 
 /* 버스정보가 없을때 */
-.myHome_busDes_ZERO {
+#myHome_busDes_ZERO {
     background-color: #000;
     border: 1px solid;
     text-align: center;
@@ -227,7 +227,7 @@ body {
     color: #fff;
 }
 
-.myHome_busDes_ZERO > .busCh_zero { 
+#myHome_busDes_ZERO > .busCh_zero { 
     margin: 5px 0 5px 30px;
     font-weight: 800;
     width: 400px;
